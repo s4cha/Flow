@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9945C1D71E801F0100AE1C57 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945C1D61E801F0100AE1C57 /* Completable.swift */; };
 		99FCBBA41E7FDCC300D847AD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99FCBBA21E7FDCC300D847AD /* Info.plist */; };
 		99FCBBA61E7FDCF600D847AD /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FCBBA51E7FDCF600D847AD /* Flow.swift */; };
 		99FCBBA81E7FDD2600D847AD /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FCBBA71E7FDD2600D847AD /* Link.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9945C1D61E801F0100AE1C57 /* Completable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completable.swift; sourceTree = "<group>"; };
 		99FCBB951E7FDC6F00D847AD /* Flow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Flow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FCBBA11E7FDCC300D847AD /* Flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
 		99FCBBA21E7FDCC300D847AD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,9 +68,10 @@
 			children = (
 				99FCBBA11E7FDCC300D847AD /* Flow.h */,
 				99FCBBA21E7FDCC300D847AD /* Info.plist */,
-				99FCBBA71E7FDD2600D847AD /* Link.swift */,
 				99FCBBA51E7FDCF600D847AD /* Flow.swift */,
+				99FCBBA71E7FDD2600D847AD /* Link.swift */,
 				99FCBBA91E7FDD4F00D847AD /* Flow+DSL.swift */,
+				9945C1D61E801F0100AE1C57 /* Completable.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9945C1D71E801F0100AE1C57 /* Completable.swift in Sources */,
 				99FCBBA61E7FDCF600D847AD /* Flow.swift in Sources */,
 				99FCBBAA1E7FDD4F00D847AD /* Flow+DSL.swift in Sources */,
 				99FCBBA81E7FDD2600D847AD /* Link.swift in Sources */,

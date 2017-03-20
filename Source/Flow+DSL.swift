@@ -13,8 +13,6 @@ precedencegroup LeftAssociativePrecedence {
     associativity: left
 }
 
-// Promise not void -> pas result to conf block??
-
 infix operator -- : LeftAssociativePrecedence
 
 infix operator --> : LeftAssociativePrecedence
@@ -34,8 +32,6 @@ public func -- <T: UIViewController, Output>
     return p
 }
 
-// return tuple instead of patial link, to keep types?
-
 public func --> <T, U: UIViewController, Output>
     (partialLink: PartialLink<T, Output>,
      to: @escaping ((Output) -> (U))) -> Link {
@@ -50,14 +46,6 @@ public func --> <T: UIViewController, U: UIViewController, Output>
      to: @escaping ((Output) -> (U))) -> Link where T:Completable, T.Output == Output {
     return Link(from: from, to: to)
 }
-
-
-
-//public func --> <T: UIViewController, U: UIViewController, Output>
-//    (from: T.Type,
-//     to: @escaping ((Output) -> (U))) -> Link  where T:Completable, T.Output == Output {
-//    return Link(from: from, to: to)
-//}
 
 public struct PartialLink<T:UIViewController, OutPut> {
     
@@ -74,14 +62,4 @@ public func --> <T: UIViewController, U: UIViewController, Output>
     (from: T.Type,
      to: U.Type) -> Link where T:Completable, T.Output == Output {
     return Link(from: from, to: to)
-}
-
-public protocol Completable: class {
-    associatedtype Output
-    var done: ((Output) -> Void)? { get set }
-}
-
-public protocol Initable {
-    associatedtype Input
-    init(input: Input)
 }
