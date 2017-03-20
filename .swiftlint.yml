@@ -1,0 +1,4 @@
+disabled_rules:
+- trailing_whitespace
+- force_cast
+- variable_name
