@@ -51,6 +51,14 @@ public func --> <T: UIViewController, U: UIViewController, Output>
     return Link(from: from, to: to)
 }
 
+
+
+//public func --> <T: UIViewController, U: UIViewController, Output>
+//    (from: T.Type,
+//     to: @escaping ((Output) -> (U))) -> Link  where T:Completable, T.Output == Output {
+//    return Link(from: from, to: to)
+//}
+
 public struct PartialLink<T:UIViewController, OutPut> {
     
     init(fromVCClass: T.Type) {
